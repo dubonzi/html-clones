@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* DEBUG */
+/* header {
+  border-bottom: 1px solid green;
+}
+
+.main__container {
+  border: 1px solid blue;
+} */
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+
+  margin-top: 20px;
+}
+
+.nav__item {
+  list-style: none;
+  margin: 0 12px;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #525252;
+
+  font-size: 0.9em;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__item:last-of-type {
+  margin-right: 30px;
+}
+
+.nav__img {
+  height: 20px;
+  width: 20px;
+}
+
+.nav__perfil {
+  display: block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+
+  background-color: #666;
+}
+
+/* MAIN */
+.main__container {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.main__logo {
+  width: 272px;
+  align-self: center;
+  margin-top: 120px;
+}
+
+.main__busca {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.main__busca-texto {
+  width: 500px;
+  padding: 13px;
+  align-self: center;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccccccbb;
+  box-shadow: 0 1px 1px 0 #ddd;
+
+  font-size: 1em;
+  margin-bottom: 45px;
+}
+
+.main__busca-icones {
+  display: flex;
+  width: 100px;
+  position: absolute;
+  align-items: center;
+  margin-right: 20px;
+
+  right: 15px;
+  top: 10px;
+}
+
+.busca-microfone {
+  height: 26px;
+}
+
+.busca-icone {
+  margin-right: 15px;
+}
+
+.main__botao-grupo {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.main__botao {
+  padding: 10px 15px;
+  border: 1px solid #f6f6f6;
+  border-radius: 2px;
+  cursor: pointer;
+
+  font-weight: 700;
+  background-color: #f6f6f6;
+  color: #666;
+}
+
+.main__botao:hover {
+  color: #000;
+  border: 1px solid #00000045;
+}
+
+.main__botao:first-of-type {
+  margin-right: 10px;
+}
