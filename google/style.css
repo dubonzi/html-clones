@@ -4,9 +4,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cinza-claro: #f6f6f6;
+  --cinza: #777777;
+}
+
 body {
   font-size: 16px;
   font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
 }
 
 /* DEBUG */
@@ -61,7 +82,7 @@ body {
   width: 35px;
   border-radius: 50%;
 
-  background-color: #666;
+  background-color: var(--cinza);
 }
 
 /* MAIN */
@@ -71,12 +92,13 @@ body {
   margin: 0 auto;
   flex-direction: column;
   justify-items: center;
+  flex-grow: 1;
 }
 
 .main__logo {
   width: 272px;
   align-self: center;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .main__busca {
@@ -87,7 +109,7 @@ body {
 }
 
 .main__busca-texto {
-  width: 500px;
+  width: 570px;
   padding: 13px;
   align-self: center;
   outline: none;
@@ -101,10 +123,10 @@ body {
 
 .main__busca-icones {
   display: flex;
-  width: 100px;
+  width: 60px;
   position: absolute;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 25px;
 
   right: 15px;
   top: 10px;
@@ -115,7 +137,7 @@ body {
 }
 
 .busca-icone {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .main__botao-grupo {
@@ -126,13 +148,13 @@ body {
 
 .main__botao {
   padding: 10px 15px;
-  border: 1px solid #f6f6f6;
+  border: 1px solid var(--cinza-claro);
   border-radius: 2px;
   cursor: pointer;
 
   font-weight: 700;
-  background-color: #f6f6f6;
-  color: #666;
+  background-color: var(--cinza-claro);
+  color: var(--cinza);
 }
 
 .main__botao:hover {
@@ -142,4 +164,57 @@ body {
 
 .main__botao:first-of-type {
   margin-right: 10px;
+}
+
+/* Footer */
+.footer__container {
+  order: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bar {
+  background-color: var(--cinza-claro);
+  padding: 11px 25px;
+  border: 1px solid #ececec;
+}
+
+.footer__country {
+  color: var(--cinza);
+  font-size: 0.97em;
+}
+
+.footer__list li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer__list a {
+  color: var(--cinza);
+  text-decoration: none;
+  font-size: 0.82em;
+}
+
+.footer__list a:hover {
+  text-decoration: underline;
+}
+
+.footer__list a:active {
+  color: #ee2020;
+}
+
+.footer__list--left {
+  float: left;
+}
+
+.footer__list--right li:last-of-type {
+  margin: 0;
+}
+
+.footer__list--right {
+  float: right;
 }

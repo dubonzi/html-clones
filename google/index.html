@@ -31,43 +31,59 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="main__container">
-        <img
-          class="main__logo"
-          src="/images/googlelogo_color_sq_272x92dp.png"
-          srcset="
-            /images/googlelogo_color_sq_272x92dp.png 1x,
-            /images/googlelogo_color_hq_272x92dp.png 2x
-          "
-          alt="Logo do Google"
+    <main class="main__container">
+      <img
+        class="main__logo"
+        src="/images/googlelogo_color_sq_272x92dp.png"
+        srcset="
+          /images/googlelogo_color_sq_272x92dp.png 1x,
+          /images/googlelogo_color_hq_272x92dp.png 2x
+        "
+        alt="Logo do Google"
+      />
+      <div class="main__busca">
+        <input
+          class="main__busca-texto"
+          type="text"
+          name="termo-busca"
+          id="termo-busca"
         />
-        <div class="main__busca">
-          <input
-            class="main__busca-texto"
-            type="text"
-            name="termo-busca"
-            id="termo-busca"
+        <div class="main__busca-icones">
+          <img
+            class="busca-icone"
+            src="images/teclado.png"
+            alt="Teclado Virtual"
           />
-          <div class="main__busca-icones">
-            <img
-              class="busca-icone busca-teclado"
-              src="images/teclado.png"
-              alt="Teclado Virtual"
-            />
-            <img
-              class="busca-icone busca-microfone"
-              src="images/mic_color_24dp.png"
-              alt="Microfone"
-            />
-          </div>
-        </div>
-        <div class="main__botao-grupo">
-          <button class="main__botao">Pesquisa Google</button>
-          <button class="main__botao">Estou com sorte</button>
+          <img
+            class="busca-icone busca-microfone"
+            src="images/mic_color_24dp.png"
+            alt="Microfone"
+          />
         </div>
       </div>
+      <div class="main__botao-grupo">
+        <button class="main__botao">Pesquisa Google</button>
+        <button class="main__botao">Estou com sorte</button>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer__container">
+      <nav class="footer">
+        <div class="footer__bar footer__country">
+          <span class="footer__country">Brasil</span>
+        </div>
+        <div class="footer__bar">
+          <ul class="footer__list footer__list--left">
+            <li><a href="#">Publicidade</a></li>
+            <li><a href="#">Negócios</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+          <ul class="footer__list footer__list--right">
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+            <li><a href="#">Configurações</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
